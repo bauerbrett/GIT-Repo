@@ -30,7 +30,7 @@ def fetch_paths(machine_id):
         software_inventory_data = response.json().get('value', [])
 
         # Filter software inventory data for the given machine ID
-        software_data = [item for item in software_inventory_data if item.get('deviceId') == machine_id]
+        software_data = [item for item in software_inventory_data if item.get('testdeviceId') == machine_id]
 
         # Print disk paths and registry paths for each software
         for item in software_data:
