@@ -53,7 +53,7 @@ try:
 
     # Specify the CSV file path
     current_date = datetime.now().strftime("%Y.%m.%d")
-    csv_file_path = f'{output_directory}\\{current_date}.DefenderMachineListing.csv'
+    csv_file_path = f'{output_directory}\\{current_date}.testDefenderMachineListing.csv'
 
     # Write data to CSV file
     with open(csv_file_path, 'w', newline='') as csv_file:
