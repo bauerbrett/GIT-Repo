@@ -39,7 +39,6 @@ def get_issue_keys():
     #Create key list with issue keys 
     #Create summary list with summary of issue
     issue_keys = []
-    summary_list = []
      # Search issues
     issues_in_proj = jira.search_issues(f'Labels={label} AND project={project}', fields=f"key, summary", maxResults=False)
     
